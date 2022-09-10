@@ -6,20 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library</title>
     <link rel="stylesheet" href="style.css">
-    <script src="app.js"></script>
+    <script src="app.js" defer></script>
 
 </head>
-<body>
-    <header>
+<body >
+    <header >
         <h1>library</h1>
     </header>
-    <main>
+    <main >
         <div class="add">
             <button>+ Add book</button>            
         </div>
 
         <div class="books">
-            
+
         </div>
         <div class="popup">
             <div class="modal">
@@ -27,9 +27,9 @@
                 <p>Add new book</p>
             </div>
             <div class="modal-main">
-                <input type="text" placeholder="Title">
-                <input type="text" placeholder="Author">
-                <input type="text" placeholder="Pages">
+                <input type="text" placeholder="Title" id="title">
+                <input type="text" placeholder="Author" id="author">
+                <input type="text" placeholder="Pages" id="pages">
             </div>
             <div class="modal-check">
                 <p>Have you read it?</p>
@@ -41,7 +41,7 @@
         
     </main>
     <footer>
-        <p>Copyright by me 2022</p>
+        <p>Copyright by me 2022 -Design inspired by <b>michalosman!</b> </p>
     </footer>
 </body>
 </html>
