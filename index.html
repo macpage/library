@@ -21,21 +21,27 @@
         <div class="books">
 
         </div>
-        <div class="popup">
-            <div class="modal">
+        <div id="popup">
+            
+            <div class="modal" >
+             
             <div class="modal-header"> 
                 <p>Add new book</p>
             </div>
             <div class="modal-main">
-                <input type="text" placeholder="Title" id="title">
-                <input type="text" placeholder="Author" id="author">
-                <input type="text" placeholder="Pages" id="pages">
+                <input type="text" placeholder="Title" id="title" required>
+                <input type="text" placeholder="Author" id="author" required>
+                <input type="number" placeholder="Pages" id="pages" required>
             </div>
             <div class="modal-check">
                 <p>Have you read it?</p>
                 <input type="checkbox" id="check">
             </div>
+
+           
             <button id="submit">Submit</button>
+            
+            
         </div>
         </div>
         
