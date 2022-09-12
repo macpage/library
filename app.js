@@ -126,16 +126,31 @@ read.addEventListener("click", () => {
 })
 
 remove.addEventListener("click", ()=>{
+    document.querySelector(".book").classList.add("gone");
+    function meineFunktion() {
+
+document.querySelector(".book").classList.remove("gone");
     booksGrid.removeChild(book);
+      }
+      
+      setTimeout(meineFunktion, 500);
+
 })
 
 
+
+    
+document.querySelector(".modal").classList.add("gone");
+function meineFunktion() {
+
+document.querySelector(".modal").classList.remove("gone");
 document.querySelector(".modal").style.display = "none";
 document.querySelector("#popup").classList.remove("modal-bg");
 document.querySelector(".books").classList.remove("modal-books");
 addBook.classList.remove("no-click");
-    
-
+  }
+  
+  setTimeout(meineFunktion, 500);
     
         } 
 
