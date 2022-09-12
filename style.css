@@ -1,3 +1,58 @@
+/* poppins-regular - latin */
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../library/font/poppins-v20-latin-regular.eot');
+    src: local(''),
+         url('../library/font/poppins-v20-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../library/font/poppins-v20-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../library/font/poppins-v20-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../library/font/poppins-v20-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../library/font/poppins-v20-latin-regular.svg#Poppins') format('svg'); /* Legacy iOS */
+  }
+  /* poppins-700 - latin */
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../library/font/poppins-v20-latin-700.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../library/font/poppins-v20-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../library/font/poppins-v20-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../library/font/poppins-v20-latin-700.woff') format('woff'), /* Modern Browsers */
+         url('../library/font/poppins-v20-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../library/font/poppins-v20-latin-700.svg#Poppins') format('svg'); /* Legacy iOS */
+  }
+
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../library/font/poppins-v20-latin-600.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../library/font/poppins-v20-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../library/font/poppins-v20-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../library/font/poppins-v20-latin-600.woff') format('woff'), /* Modern Browsers */
+         url('../library/font/poppins-v20-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../library/font/poppins-v20-latin-600.svg#Poppins') format('svg'); /* Legacy iOS */
+  }
+
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../library/font/poppins-v20-latin-500.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../library/font/poppins-v20-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../library/font/poppins-v20-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../library/font/poppins-v20-latin-500.woff') format('woff'), /* Modern Browsers */
+         url('../library/font/poppins-v20-latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../library/font/poppins-v20-latin-500.svg#Poppins') format('svg'); /* Legacy iOS */
+  }
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -26,6 +81,12 @@ header{
     width: 100%;
     display: flex;
     align-items: center;
+    box-shadow: 1px 1px 5px rgba(165, 165, 165, 0.5);
+}
+
+header h1{
+    margin-left: 15%;
+    font-size: 36px;
 }
 
 main{
@@ -44,9 +105,13 @@ main{
 }
 
 .add button{
-    background: none;
+    background-color: #f0eef1;
     border: none;
-    font-size: 28px;
+    font-size: 24px;
+    font-weight: 600;
+    border-radius: 10px;
+    width: 180px;
+    height: 50px;
 }
 
 
@@ -68,6 +133,7 @@ main{
     font-size: 22px;
     padding: 20px;
     border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(165, 165, 165, 0.5);
 }
 
 .book button{
@@ -80,7 +146,7 @@ main{
 
 .modal{
     background-color: #f0eef1;
-   
+    box-shadow: 1px 1px 5px rgba(165, 165, 165, 0.5);
     font-size: 24px;
     
     flex-direction: column;
@@ -98,7 +164,8 @@ main{
     width: fit-content;
     height: fit-content;
     animation: animatetop;
-    animation-duration: 0.5s
+    animation-duration: 0.5s;
+   
 }
 
 @keyframes animatetop {
@@ -154,7 +221,8 @@ main{
     display: flex;
     justify-content: center;
     gap: 10px;
-    font-size: 20px;
+    font-size: 18px;
+    font-weight: 600;
 }
 
 #check{
@@ -176,6 +244,7 @@ main{
     border-radius: 10px;
     background-color: rgb(159, 255, 156);
     font-size: 20px;
+    font-weight: 500;
 }
 
 #submit:hover{
@@ -217,4 +286,12 @@ footer{
 
   .no-click{
     pointer-events: none;
+  }
+
+  button{
+    cursor: pointer;
+  }
+
+  button:hover{
+    -webkit-filter: brightness(90%);
   }
